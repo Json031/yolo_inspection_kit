@@ -21,6 +21,9 @@ A lightweight YOLO-based detection toolkit for product packaging verification an
 - ⚙️ **Flexible Configuration** - Support code parameters, config files, and environment variables
 - 🖼️ **Visualization** - Generate images with detection boxes
 - 🚀 **Easy Integration** - Simple API to get started in one line
+![纯脚本检测结果](./docs/dec_results/detection_results.jpg)
+![包装清单检测成功示例](./docs/dec_results/packages_detection_results_succ.jpg)
+![包装清单检测失败示例](./docs/dec_results/packages_detection_results_fail.jpg)
 
 ## 📦 Installation
 

@@ -12,6 +12,9 @@
 - ⚙️ **灵活配置** - 支持代码参数、配置文件、环境变量等多种方式
 - 🖼️ **可视化** - 输出带检测框的结果图片
 - 🚀 **易于集成** - 简洁的API，一行代码开始检测
+![纯脚本检测结果](./docs/dec_results/detection_results.jpg)
+![包装清单检测成功示例](./docs/dec_results/packages_detection_results_succ.jpg)
+![包装清单检测失败示例](./docs/dec_results/packages_detection_results_fail.jpg)
 
 ## 📋 目录结构
 
@@ -489,7 +492,7 @@ twine upload dist/*
 
 ## 📄 许可证
 
-MIT License - 可自由使用和修改
+[MIT License](https://github.com/Json031/yolo_inspection_kit/blob/main/LICENSE)
 
 ## 💬 支持
 
