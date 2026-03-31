@@ -1,0 +1,90 @@
+# ==================== YOLO 检测工具包配置文件 ====================
+# 所有参数都应该在这里配置，不需要修改代码
+
+# ==================== 模型配置 ====================
+# 训练好的YOLO模型路径（.pt文件）
+# 支持绝对路径和相对路径，~ 表示用户主目录
+model_path: "./models/best.pt"
+
+# 预测时的置信度阈值（0-1之间）
+# YOLO模型在预测时会输出所有检测，但只保留置信度 >= 此值的结果
+model_predict_conf: 0.8
+
+# 检测结果的置信度阈值（0-1之间）
+# 低于此值的检测结果会被过滤掉（不计入最终统计）
+confidence_threshold: 0.6
+
+# ==================== 保存配置 ====================
+# 检测结果图片的保存目录
+# 支持绝对路径和相对路径，~ 表示用户主目录
+save_dir: "./detection_results"
+
+# 是否启用音频提醒（如果有音频输出需求）
+audio_alerts_enabled: false
+
+# ==================== 各类目预期个数配置 ====================
+# 格式：{class_name: expected_count}
+# class_name 必须与模型训练数据中的类别名保持一致
+# 例如：模型输出的类别名是 'huasa1'，这里就需要 'huasa1'
+expected_counts:
+  huasa1: 1           # 花洒，预期1个
+  jiaofa1: 1          # 胶法，预期1个
+  shuilongtou1: 1     # 水龙头，预期1个
+  linyuguan1: 1       # 连衣管，预期1个
+  ruanguan1: 1        # 软管，预期1个
+  shengliaodai1: 1    # 塑料袋，预期1个
+
+# ==================== ROI 多区域检测配置（可选）====================
+# 如果不需要ROI检测，将此部分留空或删除即可
+
+# ROI区域定义列表
+# x, y: ROI左上角相对坐标（0-1之间的比例）
+# w, h: ROI宽度、高度相对坐标（0-1之间的比例）
+# name: ROI名称（用于显示和标识）
+roi_definitions:
+  - name: "grid 1 - main component area"
+    x: 0.05
+    y: 0.05
+    w: 0.28
+    h: 0.52
+
+  - name: "grid 2 - Accessories Area"
+    x: 0.33
+    y: 0.15
+    w: 0.28
+    h: 0.32
+
+  - name: "grid 3 - Screw A"
+    x: 0.61
+    y: 0.10
+    w: 0.34
+    h: 0.40
+
+  - name: "grid 4 - Screw B"
+    x: 0.05
+    y: 0.63
+    w: 0.24
+    h: 0.24
+
+  - name: "grid 5 - Instruction Manual"
+    x: 0.32
+    y: 0.57
+    w: 0.35
+    h: 0.35
+
+  - name: "grid 6 - Label/Conformity Certificate"
+    x: 0.65
+    y: 0.52
+    w: 0.30
+    h: 0.43
+
+# ROI边框颜色（BGR格式）
+# 顺序必须与 roi_definitions 中的区域对应
+# 格式：(B, G, R)，取值范围 0-255
+roi_colors:
+  - [0, 255, 0]       # ROI 1 - 绿色
+  - [0, 0, 255]       # ROI 2 - 红色
+  - [255, 0, 0]       # ROI 3 - 蓝色
+  - [255, 255, 0]     # ROI 4 - 青色
+  - [0, 255, 255]     # ROI 5 - 黄色
+  - [255, 0, 255]     # ROI 6 - 品红色
