@@ -1,0 +1,49 @@
+# venv
+.venv/
+venv/
+env/
+
+# 打包产物
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 测试 & 覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 类型检查
+.mypy_cache/
+.ruff_cache/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# 环境变量
+.env
+.env.local
+
+# 临时文件
+*.log
+*.tmp
+tmp/
+
+
+# 模型文件（通常很大，不应提交）
+*.pt
+*.pth
+*.onnx
+
+# 检测结果输出
+detection_results/
+build/detection_results/
