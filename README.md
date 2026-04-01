@@ -466,7 +466,7 @@ confidence_threshold: 0.4  # Further reduce filter threshold
 
 ## 📄 License
 
-MIT License
+[MIT License](https://github.com/Json031/yolo_inspection_kit/blob/main/LICENSE)
 
 ## 🤝 Contributing
 

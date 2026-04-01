@@ -494,25 +494,10 @@ twine upload dist/*
 
 [MIT License](https://github.com/Json031/yolo_inspection_kit/blob/main/LICENSE)
 
-## 💬 支持
+## 🤝 贡献
 
-如有问题，请：
-1. 查看FAQ和文档
-2. 运行 `validate_setup.py` 检查环境
-3. 检查配置文件是否正确
+欢迎提出问题和发起合并请求！
 
-## 🎯 下一步
+## 📞 联系
 
-- [ ] 使用示例测试检测功能
-- [ ] 针对你的数据调整配置
-- [ ] 集成到生产系统
-- [ ] （可选）贡献改进意见
-
----
-
-**快速链接**
-- [English README](README.md)
-- [配置文件示例](config/default_config.yaml)
-- [使用示例代码](examples/basic_usage.py)
-
-**祝您使用愉快！** 🚀
+如果有任何问题，请在GitHub上提交一个Issue。
