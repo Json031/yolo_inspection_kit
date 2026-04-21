@@ -40,7 +40,7 @@ yolo_inspection_kit/
     └── basic_usage.py                  # 使用示例
 ```
 
-## � 安装
+## 🔨 安装
 
 ### 基础安装
 
@@ -62,7 +62,7 @@ cd yolo_inspection_kit
 pip install -e .
 ```
 
-## �🚀 快速开始
+## 🚀 快速开始
 
 ### 四种配置方式
 

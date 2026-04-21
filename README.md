@@ -14,6 +14,7 @@ A lightweight YOLO-based detection toolkit for product packaging verification an
 - [FAQ](#faq)
 
 ## ✨ Features
+<a id="features"></a>
 
 - 🎯 **Full Image Detection** - Single-pass YOLO detection on entire image
 - 🔍 **Multi-ROI Detection** - Divide image into regions and detect independently
@@ -26,6 +27,7 @@ A lightweight YOLO-based detection toolkit for product packaging verification an
 ![包装清单检测失败示例](./docs/dec_results/packages_detection_results_fail.jpg)
 
 ## 📦 Installation
+<a id="installation"></a>
 
 ### Basic Installation
 
@@ -48,6 +50,7 @@ pip install -e .
 ```
 
 ## 🚀 Quick Start
+<a id="quick-start"></a>
 
 ### Four Configuration Methods
 
@@ -123,6 +126,7 @@ Code Parameters > Environment Variables > Config File > Default Values
 ```
 
 ## ⚙️ Configuration
+<a id="configuration"></a>
 
 ### Config File Structure
 
@@ -240,6 +244,7 @@ BGR Value      Description
 ```
 
 ## 📚 Usage Examples
+<a id="usage-examples"></a>
 
 ### Example 1: Simple Full Image Detection (Code Parameters)
 
@@ -317,6 +322,7 @@ for class_id, class_name in info['class_names'].items():
 ```
 
 ## 📖 API Documentation
+<a id="api-documentation"></a>
 
 ### YoloInspector
 
@@ -404,6 +410,7 @@ result = {
 ```
 
 ## ❓ FAQ
+<a id="faq"></a>
 
 ### Q1: How to locate the model_path?
 
